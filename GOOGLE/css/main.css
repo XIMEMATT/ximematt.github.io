@@ -1,0 +1,205 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(https://imagenes.noticiasrcn.com/ImgNoticias/Tierra.jpg?VersionId=7Qmx7FNQ1zKXaKWg1yzQFQof5AuexJ4a);
+}
+
+/***************************************/
+/*Navegación*/
+header{
+    /*width-ancho//height-alto*/
+    width: 100%;
+    height: 60px;
+}
+
+header nav {
+    display:flex;
+    /*Justificar hacia la derecha*/
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+    display: flex;
+    /*Eliminar los puntos*/
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav .nav-right-section a{
+    margin-right: 25px;
+    color: black;
+}
+
+nav .nav-right-section .menú{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    margin-right: 25px;
+}
+
+nav .nav-right-section a .foto {
+    border-radius: 50%; 
+}
+ /*************************************/
+/*Main*/
+
+main{
+    margin-top: 50px;
+    text-align: center;
+}
+
+/*Sección logo*/
+main .main-logo{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+/*Logo*/
+main .main-logo img{
+    width: 300px;
+    height: 100px;
+}
+
+/*Sección input*/
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+main .main-input-container{
+    width: 500px;
+    border-radius: 80px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+main .main-input input{
+    border: none;
+    width: 450px;
+    height: 40px;
+    outline: none;
+    background-color: white;
+}
+
+main .main-input-container:hover{
+    box-shadow: 0px 1px 1px 1px #20212447;
+}
+
+main .main-input .search-icon{
+    background-image: url("https://img.icons8.com/android/24/000000/search.png");
+    background-position: center;
+    background-size: contain;
+    width: 15px;
+    background-repeat: no-repeat;
+    height: 15px;
+    margin-left: 15px;
+}
+
+main .main-input .micro-icon {
+     background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png");
+     width: 18px;
+     height: 18px;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: contain;
+     margin-right: 5px;
+}
+
+main .main-input .cam-icon {
+    background-image: url("https://www.shutterstock.com/image-vector/kerala-india-february-23-2023-260nw-2266081455.jpg");
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+main .main-buttons{
+    width: 550px;
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+    display: inline-block;
+}
+
+main .main-buttons button{
+    border: none;
+}
+
+main .main-buttons button{
+    border: 0;
+    height: 36px;
+    /*Fondo de los botones*/
+    background-color: #f8f9fa;
+    font-size: 14px;
+    /*Color de las letras antes del hover*/
+    color: #3c4043;
+    /*redondear botones*/
+    border-radius: 4px;
+    /*Margen interno*/
+    padding: 0 15px;
+    /*Margen entre botones*/
+    margin-right: 15px;
+    border: 1px solid #f8f9fa;
+}
+
+/*Efecto hover input*/
+main .main-buttons button:hover{
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    /*Cambia el borde al hacer el hover*/
+    border: 1px solid #dadce0;
+    /*Cambia el color de las letras al hacer el hover*/
+    color: #202124;
+}
+
+footer{
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    font-size: 13px;
+    border-top: 1px solid #e4e4e4;
+    /*Footer dividido en columnas*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    bottom: 0;
+}
+
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0px;
+}
+
+footer .footer-left{
+    justify-self: left;
+}
+
+footer .Footer-right{
+    justify-self: right;
+}
+
+footer ul li a{
+    margin: 5px;
+}
