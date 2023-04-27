@@ -1,102 +1,127 @@
+<!--Doctype le dice al navegador que este archivo es tipo HTML  -->
 <!DOCTYPE html>
-<!--lang debe ser español-->
+
 <html lang="es">
-<!--head-info para el navegafot-->
+<!--Info para el navegador y extras-->    
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clon Google</title>
-    <link rel="stylesheet" href="css/main.css">
-    
-</head>
-<body>
-    <!--Realizaremos el header de google-->
-    <!--header es una división de contenido-->
-    <header>
-        <!--nav-aporta navegación de la página-->
-        <nav>
-            <!--ul- unorder list- lista no ordenada-->
-            <ul class="nav-right-section">
-                <!--li*4 te dara 4 elementos de lista-->
-                <li>
-                    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">Gmail</a>
-                </li>
-                <li>
-                    <a href="https://www.google.com.mx/imghp?hl=es-419&tab=ri&ogbl">Images</a>
-                </li>
-                <li class="menú">
-                    <a href=""></a>
-                </li>
-                <li>
-                    <a href="">
-                        <img class="foto" src="https://lh3.googleusercontent.com/ogw/AAEL6sjgwOOcNGHXNibihwWHzcXRYCYJquSaibLNUJqVmpw=s32-c-mo" alt="Foto de">
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <!--Main - división y lo mas importante para nuestro contenido-->
-    <main>
-        <!--Sección logo-->
-        <section class="main-logo">
-            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Logo de Google">
-        </section>
-        <!--Sección buscador /Input-->
-        <section class="main-input">
-            <div class="main-input-container">
-                <span class="search-icon"></span>
-                <input type="text">
-                <a  class="micro-icon" href=""></a>
-                <a class="cam-icon"  href=""></a>
-            </div>
-            
-        </section>
-        <!--Botones-->
-        <section class="main-buttons" >
-            <div>
-                <button>Google Search</button>
-            </div>
-            <div>
-                <button>I'm Feeling Lucky</button>
-            </div>
-        </section>
-    
+    <!--Títulos-->
+    <title>PRIMERA PAGINA</title>
+    <!--Conectar con css-->
+    <link rel="stylesheet" href="style.css">
+    <!--Agregar fuentes de google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital@1&display=swap" rel="stylesheet">
+    </head>
+
+     <!--Dentro de mi body (cuerpo) vamos a poner lo que el usuario ve-->
+    <body>
+      
+      <h1>¡HOLA A TODAS!</h1>
+      <h2>Bonito dia</h2>
+      <h3>¿Como estan?</h3>
+      <h4>Abrazos para todas</h4>
+      <h5>Saludoooos</h5>
+      <h6>Adioss</h6>
+
+      <p> Hola, me llamo Ximena  tengo 22 años
+
+      <h1 class="título-web">WEB CETÁCEA</h1>
+      <main>
+        <h2>Imágenes de cetáceos</h2>
+        <!--Atributos son src y alt (SOURCE())-->
+        <h3>Imágen web</h3>
+        <img src="https://media.istockphoto.com/id/157572990/es/foto/salto-ballena-gris-al-atardecer.jpg?s=612x612&w=0&k=20&c=NQCKKN_bmJMv7oq1QFDXvJ6vSCs4WwoIaxQlgErwgX0=" alt="">
+        <h3>Imágen local</h3>
+        <img src="/Imagenes/image.png" width="30%" height="30%">
         
-    </main>
+        <!--Listas-->
+        <h3>Listas de cetáceos</h3>
+        <div><!--Elemento div (división de otros elementos)-->
+          <p class="aman">Cosas que <strong> aman </strong> los cetáceos</p>
+          <!--em elemto para letra cursiva-->
+          <p> <em>Lista hecha por Ximena</em> </p>
 
-    <!--Footer pie de pagina-->
-    <footer>
-        <ul class="footer-left">
-            <li>
-                <a href="">About</a>
-            </li>
+          <!--Lista no ordenada (ul)= unordered list-->
+          <ul class="lista1">
+            <li>Dar saltos <img class="barquito" src="/Imagenes/ballena.png" alt="Ballena"> </li><!--Item de la lista--> 
+            <li>Cantar <img class="cantoballena" src="/Imagenes/ballena-azul.png" alt="Ballena cantando"> </li><!--Item de la lista-->
+            <li>Jugar con embarcaciones <img class="ballenita" src="/Imagenes/barco-pirata.png" alt="Barco"> </li><!--Item de la lista--> 
+          </ul>
 
-            <li>
-                <a href="">Advertising</a>
-            </li>
 
-            <li>
-                <a href="">Bussines</a>
-            </li>
+          <p class="odian">Cosas que los cetaceos <strong>odian</strong></p>
+          <!--Lista ordenada (ol)=ordered list-->
+          <ol class="lista2">
+            <li>Contaminación auditiva</li>
+            <li>Plasticos y microplasticos en al agua</li>
+            <li>Invasión a su ambiente</li>
+          </ol>
+        </div>
 
-            <li>
-                <a href="">How Search works</a>
-            </li>
-        </ul>
-        <ul class="Footer-right">
-            <li>
-                <a href="">Privacy</a>
-            </li>
+        <h3>Contenidos</h3>
+        <!--Enlaces internos-->
+        <a 4href="#parrafo-1">¿Qué son los cetáceos?</a>
+        <br>
+        <a href="#parrafo-2"> Distribución y hábitat</a>
+        <br>
+        <a href="#parrafo-3">Comunicación</a>
 
-            <li>
-                <a href="">Term</a>
-            </li>
-            
-            <li>
-                <a href="">Settings</a>
-            </li>
-        </ul>
-    </footer>
-</body>
+        <h3 id="parrafo-1">¿Qué son los cetáceos?</h3>
+        <p>Los cetáceos (Cetacea) son un infraorden de mamíferos placentarios completamente adaptados a la vida acuática. El nombre «cetáceo» deriva del griego κῆτος, kētos, que significa «ballena» o «monstruo marino» y fue acuñado por Aristóteles para referirse a los animales acuáticos dotados de respiración pulmonar. Presentan un cuerpo fusiforme, semejante al de los peces, que los hace más hidrodinámicos.Las patas anteriores se han transformado en aletas, mientras que las posteriores han desaparecido como tales, aunque quedan algunos huesos vestigiales, no unidos a la pelvis y ocultos dentro del cuerpo. La aleta caudal es horizontal y se divide en dos lóbulos. Generalmente carecen de pelo y tienen una espesa capa de grasa que les sirve de aislamiento térmico. El clado de los cetáceos contiene unas ochenta especies,1​nota 1​ casi todas marinas, excepto 5 especies de delfines de agua dulce. Los cetáceos vivientes se subdividen en dos parvórdenes, el de los misticetos y el de los odontocetos. Un tercer parvorden, los arqueocetos, solo contiene especies extintas. Hasta hace poco los cetáceos estaban clasificados como un orden aparte, pero nuevas clasificaciones cladísticas actuales, han incluido a Cetacea como un infraorden del orden Artiodactyla y en el suborden Whippomorpha o Cetacondonta junto con los hipopótamos sus parientes más próximos y algunos clados extintos, ya que ambos compartieron antepasados que vivieron durante el Eoceno y el Paleoceno. 2​ 3​ A veces el orden Artiodactyla incluido los cetáceos se denomina Cetartiodactyla. 4​ Entre los misticetos están los animales vulgarmente llamados ballenas, los más grandes del mundo; en concreto, la ballena azul es el animal más grande que jamás haya existido en la Tierra, incluso mayor que los dinosaurios. En cambio, entre los odontocetos están los delfines y las orcas, algunas de cuyas especies pueden ser criadas y adiestradas en delfinarios. La rama de la biología que se encarga del estudio de estos animales es la cetología. </p>
+
+        <h3 id="parrafo-2">Distribución y hábitat</h3>
+        <p>Los cetáceos viven en todos los mares y océanos del mundo y algunas especies viven en lagos y ríos de Norteamérica, Sudamérica y Asia. Algunas especies, como la orca, son cosmopolitas, otras tienen una amplia distribución geográfica, pero no están presentes en todas las aguas del mundo y otros viven en zonas aún más limitadas. Es el caso, por ejemplo, de la marsopa de California, endémica de la parte septentrional del golfo de California. Algunos cetáceos viven cerca de las costas, en lo que se denomina zona nerítica, otros viven en mar abierto, en la zona oceánica y algunas especies, como el delfín mular, tienen poblaciones diferentes que viven en una zona o la otra. Además, algunos cetáceos viven cerca de estuarios fluviales y otros nadan en agua dulce.</p>
+
+
+        <h3 id="parrafo-3">Comunicación</h3>
+        <p>El empleo de las señales acústicas resulta esencial para mantener los complejos sistemas sociales de los cetáceos. Además, les facilita la búsqueda de alimentos (Au & Hastings, 2008). Odontocetos y misticetos muestran diferentes sensibilidades auditivas que parecen estar relacionadas con el diferente estilo de vida que presentan los dos parvórdenes (Ladich & Winkler, 2017), ya que los odontocetos son más residentes en aguas costeras y normalmente gregarios, mientras que los misticetos suelen ser individuos solitarios que recorren grandes distancias.
+          Los dos parvórdenes difieren además en su mecanismo fonador, el cual produce las señales acústicas:
+          - En odontocetos el mecanismo es mucho más conocido, produciendo el sonido gracias a la existencia de unos labios fónicos. Se caracterizan por generar ultrasonidos que emplean para la captura de presas y la ecolocalización.
+          - Los misticetos parecen usar la laringe, pero carecen de cuerdas vocales. Estos animales pueden comunicarse a largas distancias (Ladich & Winkler, 2017) mediante sonidos con frecuencias comprendidas entre los 20 Hz-60 kHz (Sánchez, 2016). La escasa información acerca de ello radica principalmente en su gran tamaño y la consecuente inexistencia de estos animales en cautividad lo que dificulta la experimentación con los mismos.</p>
+
+        <!--Enlaces externos-->
+        <p>Si quieres concer mas sobre los cetáceos, visita este <a href="https://www.google.com/search?q=cetaceos&sxsrf=AJOqlzVbcx7L1Ri_v2Lv7O-_7uONgCE66g:1678560808866&source=lnms&tbm=isch&sa=X&ved=2ahUKEwih_PulxtT9AhUPHUQIHbjRDMoQ_AUoAXoECAEQAw&biw=1536&bih=656&dpr=1.25">link </a></p>
+      
+
+      <h1>Algunas preguntas...</h1>
+        <!--Formulario con checbox-->
+        <p>¿Qué parvoordenes tienen los cetaceos?</p>
+            <label for="misticetos">
+              <input id="misticetos" type="checkbox" name="parvoórden" value="misticetos"> misticetos
+            </label>
+            <br>
+            <label for="odontocetos">
+              <input id="odontocetos" type="checkbox" name="parvoórden" value="odontocetos"> odontocetos
+            </label>
+            <br>
+            <label for="branquiocetos">
+              <input id="branquiocetos" type="checkbox" name="parvoórden" value="branquiocetos"> branquiocetos
+            </label>
+            <br>
+            <label for="reptilocetos">
+              <input id="reptilocetos" type="checkbox" name="parvoórden" value="reptilocetos"> reptilocetos
+            </label>
+
+        <!--Formularios con radio-->
+        <p> ¿En qué parvoórden se encuentra la ballena jorobada? </p>
+        <!--Opcion misticetos-->
+            <label for="misticetos">
+              <input id="misticetos" type="radio" value="misticetos" name="tipo de ballena"> misticetos
+            </label>
+            <br>
+        <!--Opcion odontocetos-->
+            <label for="odontocetos">
+              <input id="odontocetos" type="radio" value="odontocetos" name="tipo de ballena"> odontocetos
+            </label>
+      
+      </main>
+      <!--Footer se encuentraa dentro del body-->
+      <footer>
+        <p>Página creada por Ximena Mateos en 
+          <a href="https://tecnolochicas.mx/"> Technolochicas Pro</a>
+          </p>
+      </footer>
+
+    </body>
 </html>

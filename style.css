@@ -1,0 +1,60 @@
+/**/
+body{
+    /*RGB es red, green, blue*/
+    background-color:rgb(5, 4, 4);
+    color:blueviolet;
+    font-family: 'Josefin Slab', serif;
+}
+
+p{
+    color:whitesmoke;
+}
+
+h1{
+    color:cornflowerblue;
+}
+
+.ballenita{
+    width:20px ;
+    height:20px; 
+}
+.barquito{
+    width:20px ;
+    height:20px; 
+}
+
+.cantoballena{
+width:20px ;
+height:20px; 
+}
+
+/*Para agregar una clase ponemos (.) antes del nombre*/
+.título-web{
+    color:darkcyan;
+    font: size 100px;
+    text-align: center;
+    
+}
+
+.lista1{
+    color: whitesmoke;
+}
+
+.lista2{
+    color: whitesmoke;
+}
+
+.aman{
+    color: blueviolet;
+}
+
+.odian{
+    color: blueviolet;
+}
+
+img{
+    width: 500px ; /*Ancho*/
+   /*height Alto*/
+}
+
+
